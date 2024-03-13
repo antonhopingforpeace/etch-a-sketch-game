@@ -7,12 +7,21 @@
 body{
     height:100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-button{
+    font-weight: bolder;
+    font-size: 30px;
+    background-color: rgb(189, 162, 8);
+}
+.grid-button:active{
+    color: red;
 }
 
 #grid{
     flex:1;
-    /* height: 100px;
-    width:100px; */
     display: flex;
     flex-direction: column;
 
@@ -28,3 +37,10 @@ body{
     flex-grow:1;
 }
 
+.addMaroon{
+    background-color: maroon;
+}
+
+.addBlack{
+    background-color: black;
+}
