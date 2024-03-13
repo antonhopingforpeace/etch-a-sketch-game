@@ -4,7 +4,27 @@
     box-sizing: border-box;
 }
 
+body{
+    height:100vh;
+    display: flex;
+}
+
+#grid{
+    flex:1;
+    /* height: 100px;
+    width:100px; */
+    display: flex;
+    flex-direction: column;
+
+}
+
 .grid-row{
     display:flex;
-    border:solid black 1px;
+    flex-grow:1;
 }
+
+.grid-box{
+    border:black solid 1px;
+    flex-grow:1;
+}
+
