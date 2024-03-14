@@ -56,19 +56,25 @@ button.addEventListener("click",function(){
     
     for(let i=0;i<squaresAmount;i++){
         for(let j=0;j<squaresAmount;j++){
-            arrayDivs[i][j].addEventListener('contextmenu', (e) => {
-                e.preventDefault();
-            });
-            arrayDivs[i][j].addEventListener("mouseover", function(e){
-                arrayDivs[i][j].classList.add("addMaroon");
-            });
-            arrayDivs[i][j].addEventListener("mouseup", function(e){
-                if(e.button===2)
-                    arrayDivs[i][j].classList.remove("addMaroon");
-            });
-            arrayDivs[i][j].addEventListener("click", function(e){
-                arrayDivs[i][j].classList.add("addBlack");
-            });
+            // arrayDivs[i][j].addEventListener('contextmenu', (e) => {
+            //     e.preventDefault();
+            // });
+            // arrayDivs[i][j].addEventListener("mouseover", function(e){
+            //     arrayDivs[i][j].classList.add("addMaroon");
+            // });
+            // arrayDivs[i][j].addEventListener("mouseup", function(e){
+            //     if(e.button===2)
+            //         arrayDivs[i][j].classList.remove("addMaroon");
+            // });
+            // arrayDivs[i][j].addEventListener("click", function(e){
+            //     arrayDivs[i][j].classList.add("addBlack");
+            // });
+            arrayDivs[i][j].addEventListener("mouseover",function(){
+                let x=Math.floor(Math.random() *257);
+                let y=Math.floor(Math.random() *257);
+                let z=Math.floor(Math.random() *257);
+                arrayDivs[i][j].style.backgroundColor = "rgb("+x+","+y+","+z+")";
+                });
         }   
     }
 
@@ -110,20 +116,34 @@ for(let i=0;i<squaresAmount;i++){
 
 for(let i=0;i<squaresAmount;i++){
     for(let j=0;j<squaresAmount;j++){
-        arrayDivs[i][j].addEventListener('contextmenu', (e) => {
-            e.preventDefault();
-        });
-        arrayDivs[i][j].addEventListener("mouseover", function(e){
-            arrayDivs[i][j].classList.add("addMaroon");
-        });
-        arrayDivs[i][j].addEventListener("mouseup", function(e){
-            if(e.button===2)
-                arrayDivs[i][j].classList.remove("addMaroon");
-        });
-        arrayDivs[i][j].addEventListener("click", function(e){
-            arrayDivs[i][j].classList.add("addBlack");
-        });
+        // arrayDivs[i][j].addEventListener('contextmenu', (e) => {
+        //     e.preventDefault();
+        // });
+        // arrayDivs[i][j].addEventListener("mouseover", function(e){
+        //     arrayDivs[i][j].classList.add("addMaroon");
+        // });
+        // arrayDivs[i][j].addEventListener("mouseup", function(e){
+        //     if(e.button===2)
+        //         arrayDivs[i][j].classList.remove("addMaroon");
+        // });
+        // arrayDivs[i][j].addEventListener("click", function(e){
+        //     arrayDivs[i][j].classList.add("addBlack");
+        // });
+        arrayDivs[i][j].addEventListener("mouseover",function(){
+            let x=Math.floor(Math.random() *257);
+            let y=Math.floor(Math.random() *257);
+            let z=Math.floor(Math.random() *257);
+            arrayDivs[i][j].style.backgroundColor = "rgb("+x+","+y+","+z+")";
+            });
+        
     }   
 }
 
 
+
+// function addRandomColor(i,j){
+//     let x=Math.floor(Math.random() *257);
+//     let y=Math.floor(Math.random() *257);
+//     let z=Math.floor(Math.random() *257);
+//     arrayDivs[i][j].style.backgroundColor = "rgb("+x+","+y+","+z+")";
+// }
