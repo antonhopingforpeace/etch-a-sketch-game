@@ -9,19 +9,26 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap:40px;
+    align-items: center;
+    background-color:  rgba(15, 15, 48, 0.973);
 }
 
 .grid-button{
     font-weight: bolder;
     font-size: 30px;
-    background-color: rgb(189, 162, 8);
+    background-color: rgb(153, 131, 4);
+    padding: 8px;
 }
 .grid-button:active{
     color: red;
 }
 
 #grid{
-    flex:1;
+    background-color: white;
+    border: solid 8px rgb(153, 131, 4);
+    height:600px;
+    width:600px;
     display: flex;
     flex-direction: column;
 
@@ -33,14 +40,5 @@ body{
 }
 
 .grid-box{
-    border:black solid 1px;
     flex-grow:1;
-}
-
-.addMaroon{
-    background-color: maroon;
-}
-
-.addBlack{
-    background-color: black;
 }
